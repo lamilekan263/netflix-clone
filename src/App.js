@@ -1,13 +1,15 @@
 import React from 'react'
 import request from './request'
 
+import Banner from './components/banner/Banner'
+
 import Row from './components/row/Row' 
 import './App.css'
 
 const App = () => {
     return (
-      <div className="App">
-        <h1>Hello world</h1>
+      <div className="app">
+        <Banner />
         <Row
           title={"NETFLIX ORIGINALS"}
                 fetchUrl={request.fetchNetflixOriginals}
